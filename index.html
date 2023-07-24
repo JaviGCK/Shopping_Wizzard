@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>COMIC Store</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="form.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="icon" type="image/ico" href="resources/avangers+comic+marvel+icon-1320085978231332191.ico">
+</head>
+
+<body class="main1">
+  <header class="top">
+    <div class="box"><img src="resources/marvel1.png" id="marvel" class="dc-marvel"></div>
+    <div class="box"><img src="resources/Marvel_Logo.png" class="marvel-logo"></div>
+    <div class="box"><img src="resources/DC_Comics_logo.png" class="dc-logo move-right"></div>
+    <div class="box"><img src="resources/dc1.jpg" id="dc" class="dc-marvel opacate"></div>
+
+    <!-- MAIN PAGE -->
+
+
+  </header>
+  <main id="mid1" class="mid">
+    <div class="mid2">
+      <nav>
+        <ul>
+          <li><button type="button" id="hero1" class="hero"><span id="h-1">Captain América</span><svg
+                viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" /></button>
+            </svg></li>
+          <li><button type="button" id="hero2" class="hero"><span id="h-2">Iron Man</span><svg viewBox="-5 -5 110 110"
+                preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+              </svg></button></li>
+          <li><button type="button" id="hero3" class="hero"><span id="h-3">Spiderman</span><svg viewBox="-5 -5 110 110"
+                preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+              </svg></button></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mid3">
+      <div class="image-and-bio">
+        <div class="mid-image">
+          <img id="comic-img" src="resources/capiGrapa.jpg" alt="capiGrapa">
+        </div>
+        <div class="mid-bio">
+          <p><b>Number of pages:</b> 48pp</p>
+          <p>
+            <b>Authors:</b> Colin Kelley, Jackson Lanzing, Carmen Carnero, Ig Guara.
+          </p>
+          <p><b>Description:</b> "The Invader" begins. When he is about to give up the search for the Outer Circle,
+            Steve receives information on his next move. Sharon returns to help in a new mission,
+            while Sam Wilson deals with the consequences of his conflict with the White Wolf.</p>
+        </div>
+      </div>
+      <div class="price-and-etc">
+        <div>
+          <h3 id="comic-titulo">Captain America. Rogers / Wilson: Captain America 9 #146/9</h3>
+        </div>
+        <div class="boton-tipos">
+          <article class="artic-types feature1">
+            <input type="checkbox" id="feature1" />
+            <div>
+              <span>
+                Floppy
+              </span>
+            </div>
+          </article>
+          <article class="artic-types feature2">
+            <input type="checkbox" id="feature2" />
+            <div>
+              <span>
+                Hardcover
+              </span>
+            </div>
+          </article>
+          <article class="artic-types feature3">
+            <input type="checkbox" id="feature3" />
+            <div>
+              <span>
+                CGC
+              </span>
+            </div>
+          </article>
+        </div>
+        <div class="comic-precio"><span id="comic-precio">5,50€</span></div>
+        <div><button type="checkbox" class="add-cart" id="add-to-cart">Add to cart<i
+              class="uil uil-shopping-bag"></i></button></div>
+      </div>
+    </div>
+    <div class="mid4">
+      <div class="cart-body"><button id="cart-button" class="shopping-cart">
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24" id="cart">
+            <path fill="#000000"
+              d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z" />
+          </svg>
+          <span id="checkout">Checkout<span id="counter"></span></span>
+          <svg id="check" style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path stroke-width="2" fill="none" stroke="#ffffff" d="M 3,12 l 6,6 l 12, -12" />
+          </svg>
+        </button></div>
+    </div>
+  </main>
+
+
+  <!--FORM PASO 1-->
+
+
+  <main id="mid2" class="mid hidden">
+    <img src="resources/BUBBLE4.png" alt="bubble4" id="bubble-4" class="bubble hidden">
+    <img src="resources/BUBBLE3.png" alt="bubble3" id="bubble-3" class="bubble hidden">
+    <img src="resources/BUBBLE2.png" alt="bubble2" id="bubble-2" class="bubble hidden">
+    <img src="resources/BUBBLE1.png" alt="bubble1" id="bubble-1" class="bubble hidden">
+    <img src="resources/BUBBLEOUT.png" alt="bubblenomoretime" id="bubbleOut" class="bubble hidden">
+    <div class="formGeneralStyle" id="profileForm">
+      <h2>Profile</h2>
+      <form id="myForm">
+
+        <div class="userBox">
+          <input id="inputUser" type="text" placeholder/>
+          <span class="error-message"></span>
+          <label for="username">UserName</label>
+        </div>
+
+        <div class="userBox">
+          <input id="inputEmail" type="email" placeholder />
+          <label for="email">Email</label>
+        </div>
+
+        <div class="userBox">
+          <input id="passw" type="password" placeholder />
+          <label id="passLabel" for="password">Password</label>
+        </div>
+
+        <div class="userBox">
+          <input id="confirmPassw" type="password" placeholder />
+          <label for="password">Confirm Password</label>
+        </div>
+        <button id="toStep3" class="buttonNext">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Next
+        </button>
+        <!-- Make a reset from fron Js -->
+        <button class="buttonClear">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Clear
+        </button>
+      </form>
+    </div>
+    <div class="mid4 mid42"><span id="timer"></span></div>
+  </main>
+
+
+  <!-- Here we start with the third step -->
+
+
+  <main id="mid3" class="mid hidden">
+    <img src="resources/BUBBLE4.png" alt="bubble4" id="bubble-4" class="bubble hidden">
+    <img src="resources/BUBBLE3.png" alt="bubble3" id="bubble-3" class="bubble hidden">
+    <img src="resources/BUBBLE2.png" alt="bubble2" id="bubble-2" class="bubble hidden">
+    <img src="resources/BUBBLE1.png" alt="bubble1" id="bubble-1" class="bubble hidden">
+    <img src="resources/BUBBLEOUT.png" alt="bubblenomoretime" id="bubbleOut" class="bubble hidden">
+    <div class="formGeneralStyle" id="addressForm">
+
+      <h2>Address</h2>
+
+      <form id="myForm2">
+
+        <div class="userBox">
+          <input id="inputName" type="text" placeholder/>
+          <label for="name">Name</label>
+        </div>
+
+        <div class="userBox">
+          <input id="inputLastName" type="text" placeholder/>
+          <label for="LastName">Last Name</label>
+        </div>
+
+        <div class="userBox">
+          <input id="inputBirthday" class="inputDate" type="date" placeholder/>
+          <label for="date">Birthday</label>
+        </div>
+
+        <div class="userBox">
+          <input id="inputAddress" type="text" placeholder/>
+          <label for="address">First Address</label>
+        </div>
+
+        <div class="userBox">
+          <input id="inputSecondAddress" type="text" placeholder/>
+          <label for="secondaddress">Second Address</label>
+        </div>
+
+        <div class="userBox">
+          <input id="inputPostCode" type="number" placeholder/>
+          <label for="postcode">Post Code</label>
+        </div>
+
+        <div class="userBox">
+          <legend class="noLabelForm">Country</legend>
+          <select id="countrySelect" name="Country" value="default" required>
+            <option value="default" selected disabled>Select Country</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Spain">Spain</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Greece">Greece</option>
+          </select>
+        </div>
+
+        <div class="userBox">
+          <input type="tel" id="phoneNumberInput" placeholder/>
+          <label for="address" id="phoneNumberLabel">Phone Number</label>
+        </div>
+
+        <div class="checkBox">
+          <label>
+            <input id="checkAddress" type="checkbox" name="sitio" value="addresRegular">
+            This is your regular address
+          </label>
+        </div>
+        <button class="buttonNext" id="toStep4">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Next
+        </button>
+        <!-- Make a reset from fron Js -->
+        <button class="buttonClear">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Clear
+        </button>
+      </form>
+    </div>
+    <div class="mid4 mid42"><span id="timer"></span></div>
+  </main>
+
+  <!-- step 3 Shipping Form-->
+
+  <main id="mid4" class="mid hidden">
+    <img src="resources/BUBBLE4.png" alt="bubble4" id="bubble-4" class="bubble hidden">
+    <img src="resources/BUBBLE3.png" alt="bubble3" id="bubble-3" class="bubble hidden">
+    <img src="resources/BUBBLE2.png" alt="bubble2" id="bubble-2" class="bubble hidden">
+    <img src="resources/BUBBLE1.png" alt="bubble1" id="bubble-1" class="bubble hidden">
+    <img src="resources/BUBBLEOUT.png" alt="bubblenomoretime" id="bubbleOut" class="bubble hidden">
+    <div class="formGeneralStyle" id="shippingForm">
+
+      <h2>Shipping Types</h2>
+
+      <form id="myForm3">
+
+        <div class="checkBox">
+          <input id="freeShip" type="radio" name="shipping" value="freeShipping"/>
+          <label for="free">Free shipment (72 hours)</label>
+        </div>
+
+        <div class="checkBox">
+          <input id="extraShip" type="radio" name="shipping" value="extraShipping"/>
+          <label for="extra">Extra shipping (48 hours) 4,99€</label>
+        </div>
+        <div class="checkBox">
+          <input id="premiumShip" type="radio" name="shipping" value="premiumShipping"/>
+          <label for="premium">Premium (24 hours) 9,99€</label>
+        </div>
+
+        <span id="shipping"></span>
+
+        <div class="checkBox">
+          <input type="checkbox" id="gift-checkbox"/>
+          <label for="gift">Is it a gift?</label>
+        </div>
+
+        <!--the next part is hidden because it appears when you push the last checkbox-->
+
+        <div class="giftBox hidden">
+          <label for="giftmessage">Gift message</label>
+          <textarea id="story" name="story" rows="5" cols="33" maxlength="200"></textarea>
+        </div>
+
+        <div class="giftBox hidden">
+          <label for="giftimage">Gift wrapper image</label>
+          <input type="file" name="wrapperimage" accept="image/png, .jpeg">
+        </div>
+        <button id="toStage5" class="buttonNext">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Next
+        </button>
+        <!-- Make a reset form fron Js -->
+        <button id= "btnShip" class="buttonClear">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Clear
+        </button>
+      </form>
+    </div>
+    <div class="mid4 mid42"><span id="timer"></span></div>
+  </main>
+
+  <!-- Here we start with the final stage -->
+
+  <main id="mid5" class="mid hidden">
+    <img src="resources/BUBBLE4.png" alt="bubble4" id="bubble-4" class="bubble hidden">
+    <img src="resources/BUBBLE3.png" alt="bubble3" id="bubble-3" class="bubble hidden">
+    <img src="resources/BUBBLE2.png" alt="bubble2" id="bubble-2" class="bubble hidden">
+    <img src="resources/BUBBLE1.png" alt="bubble1" id="bubble-1" class="bubble hidden">
+    <img src="resources/BUBBLEOUT.png" alt="bubblenomoretime" id="bubbleOut" class="bubble hidden">
+    <div id="finalstage">
+
+      <h2>Order Summary</h2>
+      <div id="left">
+        <div class="pedido-container"></div>
+        <div class="formTermsPlusDetails">
+          <div class="formProductDetails">
+
+
+          </div>
+          <input type="checkbox" id="terms"><b>Terms and Conditions</b>
+        </div>
+      </div>
+      <div id="right">
+        <div class="formShippingDetails">
+          <p id="shipmentResume"></p>
+        </div>
+        <div class="formFinalPrice">
+          <p id="finalPrice"></p>
+        </div>
+      </div>
+      <div class="toBuyStuff">
+        <button id="toBuy" class="buttonNext disabled">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Buy now
+        </button>
+      </div>
+      <div class="thankYouNote hidden">
+        <h2>Thank you for your purchase</h2>
+        <p>Your shipment will be proccessed</p>
+      </div>
+    </div>
+    <div class="mid4 mid42"><span id="how-much-time"></span></div>
+  </main>
+
+  <!-- FOOTER -->
+
+
+  <footer class="bot">
+    <div class="progress-bar-body">
+      <div class="progress-bar">
+        <div id="bar" class="bar">
+        </div>
+      </div>
+    </div>
+    <div class="box4">
+      <div class="logos"><span>2023 Copyright© Fran Pérez Alberca, Javier García Cabello, Matías Alaimo Chiappa </span>
+      </div>
+      <img class="assembler-logo" src="resources/assembler.jpg">
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

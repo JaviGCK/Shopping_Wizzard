@@ -1,0 +1,407 @@
+html {
+    height: 100%;
+  }
+  checkBox
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+  }
+  
+  #mid5{
+    background: black;
+  }
+  
+  .formGeneralStyle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-height: 65%;
+    width: 65vh;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    background-image: linear-gradient(300deg, #000070 0%, #480548 100%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    overflow-y: auto;
+  }
+  
+  .formGeneralStyle h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .formGeneralStyle .userBox {
+    position: relative;
+  }
+  
+  .formGeneralStyle .userBox input {
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  
+  .formGeneralStyle .userBox label {
+    position: absolute;
+    top:-30px;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .formGeneralStyle .userBox .inputDate:focus {
+    color: #fff;
+  }
+  
+  .formGeneralStyle .userBox select {
+    background-color: transparent;
+    color: white;
+    margin-bottom: 30px;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .formGeneralStyle .userBox .legendForm {
+    padding: 10px 0;
+    color: #fff;  
+  }
+  
+  .formGeneralStyle .checkBox {
+    display: block; 
+  }
+  
+  .formGeneralStyle .checkBox label {
+    padding: 10px 0;
+    color: #fff;  
+  }
+  
+  .formGeneralStyle .checkBox input {
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .formGeneralStyle .checkBox input[type="checkbox"] {
+    accent-color: mediumpurple;
+    cursor: pointer;
+  }
+  
+  .formGeneralStyle .checkBox input[type="radio"] {
+    accent-color: mediumpurple;
+    cursor: pointer;
+  }
+  
+  #terms {
+    accent-color: mediumpurple;
+    cursor: pointer;
+  }
+  
+  .formGeneralStyle .giftBox {
+    white-space: pre-line;
+    line-height: 10px;
+  }
+  
+  .formGeneralStyle .giftBox label {
+    line-height: 30px;
+    color: white;
+  }
+  
+  .formGeneralStyle .giftBox textarea {
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+  }
+  
+  .noLabelForm {
+    padding: 10px 0;
+    color: #fff;
+  }
+  
+  #mid2 button, #mid3 button,#mid4 button, #mid5 button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    margin-left: 45px;
+    letter-spacing: 4px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #mid2 button:hover, #mid3 button:hover, #mid4 button:hover, #mid5 button:hover {
+    background: mediumpurple;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px mediumpurple,
+                0 0 25px mediumpurple,
+                0 0 50px mediumpurple,
+                0 0 100px mediumpurple;
+    cursor: pointer;
+  }
+  
+  #mid2 button span, #mid3 button span, #mid4 button span #mid5 button span{
+    position: absolute;
+    display: block;
+  }
+  
+  #mid2 button span:nth-child(1), #mid3 button span:nth-child(1),#mid4 button span:nth-child(1) #mid5 button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  #mid2 button span:nth-child(2), #mid3 button span:nth-child(2), #mid4 button span:nth-child(2), #mid5 button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  #mid2 button span:nth-child(3), #mid3 button span:nth-child(3), #mid4 button span:nth-child(3), #mid5 button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  #mid2 button span:nth-child(4), #mid3 button span:nth-child(4), #mid4 button span:nth-child(4), #mid5 button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+  #shipping {
+    color:white;
+    line-height: 2vh;
+    font-weight: 600;
+  }
+  
+  #finalstage {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%; 
+    grid-template-rows: 12vh auto auto auto;
+    color: white;
+    }
+  
+  #finalstage h2 {
+    grid-column: 1/3;
+    font-size: 42px;
+    text-align: center;
+    margin: 3vh;
+    font-weight: 800;
+    text-shadow: -1px 1px 2px #fff;
+  }
+  
+  #left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    }
+  
+  #right {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-color: black;
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .toBuyStuff{
+    grid-row: 3;
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #toBuy{
+    font-weight: 900;
+  }
+  #terms{
+    margin-top: 35px;
+  }
+  
+  .finalPic {
+    width: 100px;
+    height: 140px;
+    margin: 1vh;
+    border: 2px solid lightgray;
+  }
+  
+  #toBuy{
+    opacity: 90%;
+  }
+  
+  #toBuy.disabled {
+    opacity: 20%;
+    pointer-events: none;
+  }
+  
+  #finalPrice {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  
+  #timer {
+    position:relative;
+    color: whitesmoke;
+    font-weight: 600;
+    font-family: "Comic-sans", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.2s;
+    font-size: 22px;
+    border: 3px solid whitesmoke;
+    border-radius: 25%;
+    padding: 1.5vh;
+    background-color: black;
+  }
+  
+  #timer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 25%;
+    background-color: transparent;
+    animation: clock 1s linear infinite;
+    clip-path: circle(14px);
+  }
+  
+  @keyframes clock {
+    100%{
+      background-color: transparent;
+      height: 150%;
+      clip-path: circle(1px);
+    }
+    
+    75% {
+      height: 150%;
+    }
+    
+    50%{
+      height: 100%;
+      clip-path: circle(5px);
+    }
+    
+    25%{
+      height: 50%;
+    }
+    
+    0%{
+      height: 0;
+      background-color: whitesmoke; 
+    }
+  }
+  
+  .red{
+    color: red;
+  }
+  
+  .thankYouNote {
+    grid-column: 1/3;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hidden {
+    display:none
+  }
+  
